@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "358886432630",
+    "project_id": "stackmodetest",
+    "storage_bucket": "stackmodetest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358886432630:android:40e92b108d51f90e5f6457",
+        "android_client_info": {
+          "package_name": "com.example.stackmodetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq42buYu4pqQbxi4w0tdRm8c8iHtyetxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358886432630:android:3f8d106ee8c06ca05f6457",
+        "android_client_info": {
+          "package_name": "com.tets.stackmodetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq42buYu4pqQbxi4w0tdRm8c8iHtyetxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
