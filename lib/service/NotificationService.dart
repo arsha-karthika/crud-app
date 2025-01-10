@@ -1,5 +1,4 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import '../model/task.dart';
 
@@ -17,7 +16,6 @@ class NotificationService {
   }
 
   Future<void> scheduleNotification(Task task) async {
-    // Convert task.dueDate (DateTime) to TZDateTime
     var scheduledNotificationDateTime = tz.TZDateTime.from(task.dueDate, tz.local);
 
     var androidDetails = AndroidNotificationDetails(
@@ -34,7 +32,7 @@ class NotificationService {
       0,
       'Task Reminder',
       task.title,
-      scheduledNotificationDateTime, // Use TZDateTime
+      scheduledNotificationDateTime,
       notificationDetails,
       androidAllowWhileIdle: true,
       uiLocalNotificationDateInterpretation:

@@ -15,7 +15,7 @@ class TaskListScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Get.toNamed('/taskAdd'); // Navigate to task adding screen
+              Get.toNamed('/taskAdd');
             },
           ),
         ],

@@ -32,12 +32,7 @@ Future<void> initializeNotifications() async {
   );
 
   flutterLocalNotificationsPlugin.initialize(initializationSettings);
-  // final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-  // FlutterLocalNotificationsPlugin();
-  //
-  // var androidInitialize = AndroidInitializationSettings('app_icon');
-  // var initializationSettings = InitializationSettings(android: androidInitialize);
-  // await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+
 }
 Future<void> scheduleNotification(Task task) async {
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
@@ -52,10 +47,8 @@ Future<void> scheduleNotification(Task task) async {
   );
   var platformDetails = NotificationDetails(android: androidDetails);
 
-  // Convert DateTime to TZDateTime
   final tz.TZDateTime scheduledDate = tz.TZDateTime.from(task.dueDate, tz.local);
 
-  // Schedule the notification
   await flutterLocalNotificationsPlugin.zonedSchedule(
     0,
     'Task Reminder',
@@ -65,7 +58,7 @@ Future<void> scheduleNotification(Task task) async {
     androidAllowWhileIdle: true,
     uiLocalNotificationDateInterpretation:
     UILocalNotificationDateInterpretation.wallClockTime, // Interpret as wall clock time
-   // Schedule exactly at the specified time
+
   );
 }
 class MyApp extends StatelessWidget {

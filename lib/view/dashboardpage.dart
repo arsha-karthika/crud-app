@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controller/TaskController.dart';
-import '../controller/Theme.dart'; // Create TaskController to manage tasks
+import '../controller/Theme.dart';
 
 class DashboardScreen extends StatelessWidget {
   final TaskController taskController = Get.put(TaskController());

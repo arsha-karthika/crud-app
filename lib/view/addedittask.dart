@@ -30,7 +30,7 @@ class AddEditTaskScreen extends StatelessWidget {
               decoration: InputDecoration(labelText: 'Description'),
             ),
             DropdownButton<String>(
-              value: 'High', // Default priority
+              value: 'High',
               onChanged: (value) {},
               items: [
                 DropdownMenuItem(child: Text('High'), value: 'High'),
@@ -53,7 +53,7 @@ class AddEditTaskScreen extends StatelessWidget {
                 } else {
                   taskController.addTask(task);
                 }
-                Get.back(); // Go back after adding/editing
+                Get.back();
               },
               child: Text(isEditMode ? 'Update Task' : 'Add Task'),
             ),

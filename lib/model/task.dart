@@ -17,7 +17,6 @@ class Task {
     required this.status,
   });
 
-  // Convert Task to Map for Firestore storage
   Map<String, dynamic> toMap() {
     return {
       'title': title,
@@ -27,8 +26,6 @@ class Task {
       'status': status,
     };
   }
-
-  // Convert Firestore document to Task object
   factory Task.fromMap(String id, Map<String, dynamic> map) {
     return Task(
       id: id,
